@@ -1,6 +1,7 @@
 import "./App.css";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         <Hero />
         <Projects />
       </main>
-      <footer></footer>
+      <Footer />
     </>
   );
 }
