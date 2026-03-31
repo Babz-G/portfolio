@@ -8,7 +8,7 @@ import Toggle from "./components/Toggle";
 function App() {
   const [theme, setTheme] = useState("light");
   return (
-    <>
+    <div data-theme={theme}>
       <header>
         <Toggle theme={theme} setTheme={setTheme} />
       </header>
@@ -17,7 +17,7 @@ function App() {
         <Projects />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 

@@ -1,0 +1,44 @@
+:root {
+  --white: #f9faff;
+  --platinum: #e3e4e8;
+  --lt-blue: #6dadd0;
+  --med-blue: #5a91c7;
+  --turq: #32779b;
+  --gray: #9a9a9a;
+  --onyx: #3c3d44;
+  --charcoal: #343c47;
+  --dark-projects: #2e313d;
+
+  --corners: 24px 0;
+  --corners-sm: 10px 0;
+  --base-font-size: 1rem;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+[data-theme="light"] {
+  --ld-bkgd: var(--platinum);
+  --ld-text: var(--onyx);
+  --ld-projects: var(--white);
+  --ld-blue: var(--turq);
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --ld-bkgd: var(--charcoal);
+  --ld-text: var(--white);
+  --ld-projects: var(--dark-projects);
+  --ld-blue: var(--lt-blue);
+  color-scheme: dark;
+}
+
+[data-theme] {
+  background-color: var(--ld-bkgd);
+  color: var(--ld-text);
+}
