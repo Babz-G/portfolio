@@ -1,10 +1,15 @@
 import "./App.css";
+import Hero from "./components/Hero";
+import Projects from "./components/Projects";
 
 function App() {
   return (
     <>
       <header></header>
-      <main></main>
+      <main>
+        <Hero />
+        <Projects />
+      </main>
       <footer></footer>
     </>
   );
